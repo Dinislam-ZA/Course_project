@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/notes_list_fragment">
+
+    <fragment
+        android:id="@+id/notes_list_fragment"
+        android:name="com.example.note_application_neko_ru.Notes_list_fragment"
+        android:label="fragment_notes_list_fragment"
+        tools:layout="@layout/fragment_notes_list_fragment" />
+    <fragment
+        android:id="@+id/reminder_list_fragment"
+        android:name="com.example.note_application_neko_ru.Reminder_list_fragment"
+        android:label="fragment_reminder_list_fragment"
+        tools:layout="@layout/fragment_reminder_list_fragment" />
+</navigation>

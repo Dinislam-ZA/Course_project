@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TaskEditActivity">
+
+
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/Description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/task_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/task_title"
+        app:layout_constraintTop_toBottomOf="@+id/task_date" />
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/Note_title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/task_date"
+        android:layout_width="178dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:contextClickable="false"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="Установить дату"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toStartOf="@+id/task_description"
+        app:layout_constraintTop_toBottomOf="@+id/task_title"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_task_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="OnClickAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/task_timepicker"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/datepicker_icon2"
+        android:hint="Установить время"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/task_date"
+        app:layout_constraintStart_toEndOf="@+id/task_date"
+        app:layout_constraintTop_toBottomOf="@+id/task_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

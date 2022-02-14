@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Заметки"
+        android:id="@+id/notes_list_fragment"
+        android:icon="@drawable/notes_icon"
+        />
+    <item android:title="Напоминания"
+        android:id="@+id/reminder_list_fragment"
+        android:icon="@drawable/remind_task_icon"
+        />
+</menu>

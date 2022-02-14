@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NotesAndReminders</string>
+    <string name="statenotriggered">Не сработано</string>
+    <string name="statetriggered">Сработано</string>
+    <string name="Note_title">Заголовок</string>
+    <string name="Description">Содержание</string>
+    <string name="IOTitleAndDescValid">Ни заголовок ни содержание не должны быть пустыми!</string>
+    <string name="TaskInsertValidation">Ни одно из полей не должно быть пустыми!</string>
+    <string name="saved">Сохранено!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
